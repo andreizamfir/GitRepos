@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.9.1)
+  - DSGradientProgressView (1.0.1)
+  - Kingfisher (5.11.0):
+    - Kingfisher/Core (= 5.11.0)
+  - Kingfisher/Core (5.11.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DSGradientProgressView
+  - Kingfisher (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DSGradientProgressView
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  DSGradientProgressView: 256d85dc3a92b429ace38617ceb459faec42bb41
+  Kingfisher: 4569606189149e19c7d9439f47e885d0679b7a90
+
+PODFILE CHECKSUM: 625df15e49c96dd89157bfc7902b38fbba3c8238
+
+COCOAPODS: 1.8.4

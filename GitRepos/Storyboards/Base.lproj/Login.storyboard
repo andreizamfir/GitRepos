@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qI4-Dd-Gx3">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="gAs-tf-7Ug">
+            <objects>
+                <navigationController id="qI4-Dd-Gx3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zNe-eP-ndp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dQY-mZ-kAY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KIC-dp-n3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1431" y="132"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="GitRepos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qff-fM-9Ya">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-9L-rcO">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="09F-Dw-pey">
+                                                <rect key="frame" x="100" y="188.5" width="175" height="290"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="githubLogo" translatesAutoresizingMaskIntoConstraints="NO" id="s6e-XZ-0dk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="Xf6-QD-tN7"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to Github" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVs-An-WAi">
+                                                        <rect key="frame" x="0.0" y="60" width="175" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username or email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sqw-fU-tD3">
+                                                        <rect key="frame" x="0.0" y="120" width="175" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="continue" enablesReturnKeyAutomatically="YES" textContentType="username"/>
+                                                    </textField>
+                                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qpK-Ph-yEd">
+                                                        <rect key="frame" x="0.0" y="180" width="175" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qp-WT-v3Q">
+                                                        <rect key="frame" x="0.0" y="240" width="175" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Log in">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOi-Eg-n0A"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfe-ER-lrm" customClass="DSGradientProgressView" customModule="DSGradientProgressView">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="yvS-w0-qZs"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                                        <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="09F-Dw-pey" firstAttribute="leading" secondItem="jiO-9L-rcO" secondAttribute="leading" constant="100" id="JXM-XE-nMz"/>
+                                            <constraint firstItem="sfe-ER-lrm" firstAttribute="top" secondItem="jiO-9L-rcO" secondAttribute="top" id="dg6-LE-zOE"/>
+                                            <constraint firstItem="sfe-ER-lrm" firstAttribute="leading" secondItem="jiO-9L-rcO" secondAttribute="leading" id="ffD-fF-FDD"/>
+                                            <constraint firstAttribute="trailing" secondItem="sfe-ER-lrm" secondAttribute="trailing" id="kXB-zd-l9w"/>
+                                            <constraint firstAttribute="trailing" secondItem="09F-Dw-pey" secondAttribute="trailing" constant="100" id="uOW-Pt-YH7"/>
+                                            <constraint firstItem="09F-Dw-pey" firstAttribute="centerY" secondItem="jiO-9L-rcO" secondAttribute="centerY" id="zgl-qx-1lC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jiO-9L-rcO" firstAttribute="leading" secondItem="qff-fM-9Ya" secondAttribute="leading" id="44i-Mb-TWO"/>
+                                    <constraint firstAttribute="bottom" secondItem="jiO-9L-rcO" secondAttribute="bottom" id="Fda-Tv-lMl"/>
+                                    <constraint firstAttribute="trailing" secondItem="jiO-9L-rcO" secondAttribute="trailing" id="M5g-5L-L4i"/>
+                                    <constraint firstItem="jiO-9L-rcO" firstAttribute="top" secondItem="qff-fM-9Ya" secondAttribute="top" id="ZQQ-Gn-PGV"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qff-fM-9Ya" secondAttribute="trailing" id="93g-PX-8Hn"/>
+                            <constraint firstItem="qff-fM-9Ya" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BN1-FL-d90"/>
+                            <constraint firstItem="qff-fM-9Ya" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CSH-ox-9zx"/>
+                            <constraint firstAttribute="bottom" secondItem="qff-fM-9Ya" secondAttribute="bottom" id="E2R-lT-R4f"/>
+                            <constraint firstItem="jiO-9L-rcO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="aHu-tr-TjV"/>
+                            <constraint firstItem="jiO-9L-rcO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="fhK-rM-VZ9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oi6-k8-4ox"/>
+                    <connections>
+                        <outlet property="progressView" destination="sfe-ER-lrm" id="CdL-NT-4mi"/>
+                        <outlet property="scrollView" destination="qff-fM-9Ya" id="dOK-e7-AyW"/>
+                        <outlet property="tfPassword" destination="qpK-Ph-yEd" id="YDG-U5-AAu"/>
+                        <outlet property="tfUsername" destination="sqw-fU-tD3" id="PpR-rG-vKA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="githubLogo" width="512" height="512"/>
+    </resources>
+</document>
